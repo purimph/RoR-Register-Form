@@ -23,13 +23,13 @@
         <td><%= registration.email %></td>
         <td><%= registration.phone_number %></td>
         <td><%= registration.subject %></td>
-        <td>
-          <%= link_to 'Edit', edit_registration_path(registration) %>
-<%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-btn' %>
-          </td>
+        <td class="action-buttons">
+          <%= link_to 'Edit', edit_registration_path(registration), class: 'action-btn edit-btn' %>
+          <%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'action-btn delete-btn' %>
+        </td>
       </tr>
     <% end %>
   </tbody>
 </table>
 
-<%= link_to 'New Registration', new_registration_path %>
+<%= link_to 'New Registration', new_registration_path , class: 'new-registration-btn'%>
