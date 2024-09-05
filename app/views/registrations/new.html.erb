@@ -1,0 +1,54 @@
+<%= form_with(model: @registration, local: true, class: "register-form") do |form| %>
+    <h1>Register Form</h1>
+    
+    <div class="form-group">
+      <div class="name-title">
+        <%= form.label :first_name do %>
+          First name
+          <%= form.text_field :first_name %>
+        <% end %>
+        <%= form.label :last_name do %>
+          Last Name
+          <%= form.text_field :last_name %>
+        <% end %>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <div class="birthday-title">
+        <%= form.label :birthday %>
+        <%= form.date_field :birthday %>
+      </div>
+      <div class="gender-group">
+        <div class="gender-title">Gender</div>
+        <div class="gender-point">
+          <%= form.label :gender_male do %>
+            <%= form.radio_button :gender, 'male' %> Male
+          <% end %>
+          <%= form.label :gender_female do %>
+            <%= form.radio_button :gender, 'female' %> Female
+          <% end %>
+        </div>
+      </div>
+    </div>
+  
+    <div class="form-group">
+      <%= form.label :email do %>
+        Email
+        <%= form.email_field :email %>
+      <% end %>
+      <%= form.label :phone_number do %>
+        Phone Number
+        <%= form.telephone_field :phone_number %>
+      <% end %>
+    </div>
+  
+    <div class="form-group">
+      <%= form.label :subject do %>
+        Subject
+        <%= form.select :subject, options_for_select([['Select Subject', 'none'], ['HTML', 'html'], ['CSS', 'css'], ['JavaScript', 'javascript']]) %>
+      <% end %>
+    </div>
+  
+    <%= form.submit 'Submit', class: 'submit-btn' %>
+  <% end %>
