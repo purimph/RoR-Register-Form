@@ -1,0 +1,88 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+thead {
+  border-bottom: 1px solid black;
+  width:fit-content;
+  background-color: #f2f2f2;
+}
+
+th {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  color: white;
+  font-weight: bold;
+  background-color: darkblue;
+  justify-content: center;
+  text-wrap: nowrap;
+}
+
+td {
+  padding: 8px;
+  text-align: center;
+}
+
+tr{
+  background-color: white;
+}
+.action-buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* สไตล์สำหรับปุ่ม Edit และ Delete */
+.action-btn {
+  padding: 6px 12px;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.edit-btn {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+
+.action-btn:hover {
+  opacity: 0.8;
+}
+
+.new-registration-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.new-registration-btn:hover {
+  background-color: #007B9A;
+}
