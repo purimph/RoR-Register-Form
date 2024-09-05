@@ -25,7 +25,7 @@
         <td><%= registration.subject %></td>
         <td>
           <%= link_to 'Edit', edit_registration_path(registration) %>
-          <%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' } %>
+<%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'delete-btn' %>
           </td>
       </tr>
     <% end %>
