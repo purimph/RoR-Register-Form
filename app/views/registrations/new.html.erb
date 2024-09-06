@@ -5,11 +5,11 @@
       <div class="name-title">
         <%= form.label :first_name do %>
           First name
-          <%= form.text_field :first_name %>
+          <%= form.text_field :first_name, required: true %>
         <% end %>
-        <%= form.label :last_name do %>
+        <%= form.label :last_name do%>
           Last Name
-          <%= form.text_field :last_name %>
+          <%= form.text_field :last_name,required: true %>
         <% end %>
       </div>
     </div>
@@ -17,7 +17,7 @@
     <div class="form-group">
       <div class="birthday-title">
         <%= form.label :birthday %>
-        <%= form.date_field :birthday %>
+        <%= form.date_field :birthday, required: true %>
       </div>
       <div class="gender-group">
         <div class="gender-title">Gender</div>
@@ -35,11 +35,11 @@
     <div class="form-group">
       <%= form.label :email do %>
         Email
-        <%= form.email_field :email %>
+        <%= form.email_field :email, required: true %>
       <% end %>
       <%= form.label :phone_number do %>
         Phone Number
-        <%= form.telephone_field :phone_number %>
+        <%= form.telephone_field :phone_number, required: true %>
       <% end %>
     </div>
   
@@ -49,7 +49,8 @@
         <%= form.select :subject, options_for_select([['Select Subject', 'none'], ['HTML', 'HTML'], ['CSS', 'CSS'], ['JavaScript', 'JAVASCRIPT']]) %>
       <% end %>
     </div>
-  
-    <%= form.submit 'Submit', class: 'submit-btn' %>
-    <%= link_to 'View Members', registrations_path, class: 'view-members-btn' %>
+    <div class="btn-group">
+        <%= form.submit 'Submit', class: 'submit-btn' %>
+        <%= link_to 'View Members', registrations_path, class: 'view-members-btn' %>
+    </div>
   <% end %>
