@@ -1,35 +1,43 @@
-<h1>Members</h1>
+<div class="members-container">
+  <div class="header">
+    <h1>Members</h1>
+    <div>
+    <%= link_to 'Add Member', new_registration_path , class: 'new-registration-btn'%>
+    </div>
+  </div>
+  <div class"table-member">
+    <table>
+      <thead>
+        <tr>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Birthday</th>
+          <th>Gender</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Subject</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @registrations.each do |registration| %>
+          <tr>
+            <td><%= registration.first_name %></td>
+            <td><%= registration.last_name %></td>
+            <td><%= registration.birthday %></td>
+            <td><%= registration.gender %></td>
+            <td><%= registration.email %></td>
+            <td><%= registration.phone_number %></td>
+            <td><%= registration.subject %></td>
+            <td class="action-buttons">
+              <%= link_to 'Edit', edit_registration_path(registration), class: 'action-btn edit-btn' %>
+              <%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'action-btn delete-btn' %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
 
-<table>
-  <thead>
-    <tr>
-      <th>First Name</th>
-      <th>Last Name</th>
-      <th>Birthday</th>
-      <th>Gender</th>
-      <th>Email</th>
-      <th>Phone Number</th>
-      <th>Subject</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <% @registrations.each do |registration| %>
-      <tr>
-        <td><%= registration.first_name %></td>
-        <td><%= registration.last_name %></td>
-        <td><%= registration.birthday %></td>
-        <td><%= registration.gender %></td>
-        <td><%= registration.email %></td>
-        <td><%= registration.phone_number %></td>
-        <td><%= registration.subject %></td>
-        <td class="action-buttons">
-          <%= link_to 'Edit', edit_registration_path(registration), class: 'action-btn edit-btn' %>
-          <%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'action-btn delete-btn' %>
-        </td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
 
-<%= link_to 'Register Now!', new_registration_path , class: 'new-registration-btn'%>
+</div>
