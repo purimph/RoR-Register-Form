@@ -26,6 +26,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/rails-form:latest
-          platforms: linux/amd64,linux/arm64
+          # platforms: linux/amd64,linux/arm64
 
       
