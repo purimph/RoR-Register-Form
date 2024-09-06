@@ -1,108 +1,121 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #1230ae, #c68fe6);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
-  
-  .register-form {
-    background-color: #fff;
-    padding: 60px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    width: 500px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to bottom, #1230ae, #c68fe6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
 
-    select {
-      background-color: #f8f8f8;
-    }
-  
-    h1 {
-      padding: 0px;
-      margin: 0px 0px 20px 0px;
-    }
-  }
-  
-  .name-title {
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    width: 100%;
-  }
-  
-  .form-group {
-    display: flex;
-    margin-bottom: 15px;
-    gap: 2rem;
-  
-    input[type="text"],
-    input[type="date"],
-    input[type="email"],
-    input[type="tel"],
-    select {
-      padding: 8px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      margin-top: 5px;
-    }
-  
-    .name-title label,
-    label {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-    }
-  }
-  
-  .birthday-title {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .gender-group {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  
-    .gender-point label {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-  
-  .gender-point {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: 100%;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .submit-btn {
-    background: blue;
-    color: #fff;
-    padding: 10px;
-    border-radius: 10px;
-    width: 100px;
+.register-form {
+  background-color: #fff;
+  padding: 60px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 500px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  select {
+    background-color: #f8f8f8;
   }
 
-  .delete-btn {
-    background-color: red;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
+  h1 {
+    padding: 0px;
+    margin: 0px 0px 20px 0px;
   }
-  
-  .delete-btn:hover {
-    background-color: darkred;
+}
+
+.name-title {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  margin-bottom: 15px;
+  gap: 2rem;
+
+  input[type="text"],
+  input[type="date"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
   }
+
+  .name-title label,
+  label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
+.birthday-title {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gender-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .gender-point label {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.gender-point {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  height: 100%;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #1230ae;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.view-members-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #6C48C5;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+}
+
+.view-members-btn:hover {
+  background-color: #2980b9;
+}
+
+.btn-group{
+  display: flex;
+  flex-direction: column;
+}

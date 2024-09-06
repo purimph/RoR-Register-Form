@@ -75,15 +75,16 @@ tr{
 .new-registration-btn {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #008CBA;
+  background-color: #F94C10;
   color: white;
   text-decoration: none;
   border-radius: 4px;
   font-size: 16px;
   margin-top: 20px;
-  
+
 }
 
 .new-registration-btn:hover {
-  background-color: #007B9A;
+  background-color: #C70039;
+  color: white;
 }
