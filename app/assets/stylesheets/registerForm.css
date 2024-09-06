@@ -1,6 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(to bottom, #1230ae, #c68fe6);
+  background: linear-gradient(to bottom, #DAD3BE, #6B8A7A, #254336);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -90,12 +90,16 @@ body {
   display: inline-block;
   padding: 10px 20px;
   color: white;
-  background-color: #1230ae;
+  background-color: #399918;
   text-decoration: none;
   border-radius: 10px;
   font-size: 16px;
   margin-top: 20px;
   transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #387F39;
 }
 
 .view-members-btn {
