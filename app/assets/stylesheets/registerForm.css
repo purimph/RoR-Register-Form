@@ -91,15 +91,15 @@ h1{
 }
 
 .submit-btn {
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   color: white;
-  background-color: #399918;
-  text-decoration: none;
+  background-color: #80AF81;
   border-radius: 10px;
   font-size: 16px;
   margin-top: 20px;
-  transition: background-color 0.3s ease;
+  border-color: #80AF81;
+  border-style:solid;
 }
 
 .submit-btn:hover {
@@ -109,18 +109,20 @@ h1{
 .view-members-btn {
   display: inline-block;
   padding: 10px 20px;
-  color: white;
-  background-color: #6c48c5;
+  color: #80AF81;
+  background-color: white;
   text-decoration: none;
   border-radius: 10px;
   font-size: 16px;
   margin-top: 20px;
   transition: background-color 0.3s ease;
   text-align: center;
+  border-style: solid;
+  border-color: #80AF81;
 }
 
 .view-members-btn:hover {
-  background-color: #2980b9;
+  background-color: #DDDDDD;
 }
 
 .btn-group {
