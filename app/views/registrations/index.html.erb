@@ -9,11 +9,11 @@
     <table>
       <thead>
         <tr>
-          <th>First Name</th>
+          <th><%= sortable "first_name", "First Name"%></th>
           <th>Last Name</th>
           <th>Birthday</th>
           <th>Gender</th>
-          <th>Email</th>
+          <th><%= sortable "email", "Email" %></th>
           <th>Phone Number</th>
           <th>Subject</th>
           <th>Actions</th>
@@ -37,6 +37,10 @@
         <% end %>
       </tbody>
     </table>
+  </div>
+
+  <div class="pagination">
+    <%= will_paginate @registrations %>
   </div>
 
 
