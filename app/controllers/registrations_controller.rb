@@ -36,6 +36,11 @@ class RegistrationsController < ApplicationController
     redirect_to registrations_path, notice: 'Registration was successfully deleted.'
   end
 
+  def confirm_modal
+    @registration = Registration.find(params[:id])
+    render turbo_stream: turbo_stream.replace("modal", partial: "modal_confirm", locals: { registration: @registration })
+  end
+
   private
 
   def sort_column

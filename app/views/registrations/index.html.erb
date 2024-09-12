@@ -31,7 +31,7 @@
             <td><%= registration.subject %></td>
             <td class="action-buttons">
               <%= link_to 'Edit', edit_registration_path(registration), class: 'action-btn edit-btn' %>
-              <%= button_to 'Delete', registration_path(registration), method: :delete, data: { confirm: 'Are you sure?' }, class: 'action-btn delete-btn' %>
+              <%= button_to 'Delete', confirm_modal_registration_path(registration), method: :get, class: 'action-btn delete-btn' %>
             </td>
           </tr>
         <% end %>
@@ -45,3 +45,5 @@
 
 
 </div>
+
+<%= turbo_frame_tag "modal" %>
