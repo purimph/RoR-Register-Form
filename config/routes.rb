@@ -1,9 +1,11 @@
 Rails.application.routes.draw do
-  resources :registrations, only: [:index, :new, :create, :edit, :update, :data, :destroy] do
+  resources :registrations do
+    collection do
+      get :register_modal
+    end
     member do
-      get 'confirm_modal'
+      get :confirm_modal
     end
   end
-  root 'registrations#new'
+  root to: 'registrations#new'
 end
-

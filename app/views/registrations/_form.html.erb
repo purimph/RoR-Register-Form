@@ -1,6 +1,8 @@
 <%= form_with(model: @registration, local: true, class: "register-form") do |form| %>
     
     <div class="form-group">
+    <div class="header-title">
+    <h1>Register Form</h1>
       <div class="name-title">
         <%= form.label :first_name do %>
           First name
@@ -10,6 +12,7 @@
           Last Name
           <%= form.text_field :last_name,required: true %>
         <% end %>
+      </div>
       </div>
     </div>
   

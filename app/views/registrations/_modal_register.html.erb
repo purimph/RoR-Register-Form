@@ -1,0 +1,6 @@
+<div id="register_modal" class="modal" data-controller="modal">
+    <%= render partial:  "form", locals: {registration: @registration} %>
+    <div class="btn-group">
+        <%= button_to 'Cancel', registrations_path, class: 'cancel-btn-regis' %>
+    </div>
+</div>

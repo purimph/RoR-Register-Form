@@ -41,6 +41,11 @@ class RegistrationsController < ApplicationController
     render turbo_stream: turbo_stream.replace("modal", partial: "modal_confirm", locals: { registration: @registration })
   end
 
+  def register_modal
+    @registration = Registration.new
+    render turbo_stream: turbo_stream.replace("modal", partial: "modal_register", locals: { registration: @registration })
+  end
+
   private
 
   def sort_column

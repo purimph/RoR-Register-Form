@@ -15,7 +15,7 @@
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  width: 500px;
+  width: 600px;
   max-width: 100%;
   text-align: center;
 }
@@ -63,4 +63,9 @@
 
 .cancel-button:hover {
   background-color: #dddddd;
+}
+
+.cancel-btn-regis {
+  z-index: 1000;
+  display
 }
