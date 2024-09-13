@@ -1,6 +1,7 @@
 <div id="register_modal" class="modal" data-controller="modal">
+  <div class="modal-content">
+  <h1>Register Form</h1>
     <%= render partial:  "form", locals: {registration: @registration} %>
-    <div class="btn-group">
-        <%= button_to 'Cancel', registrations_path, class: 'cancel-btn-regis' %>
-    </div>
+    <%= link_to 'Cancel', registrations_path, class: 'cancel-btn-regis-modal', data_action: 'modal#close' %>
+  </div>
 </div>

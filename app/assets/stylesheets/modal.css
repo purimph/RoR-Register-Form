@@ -49,23 +49,38 @@
 }
 
 .cancel-button {
-  background-color: white;
-  color: #80af81;
+  background-color: #FF0000;
+  color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   font-size: 16px;
   border-style: solid;
-  border-color: #80af81;
+  border-color: #E72929;
   text-decoration: none;
 }
 
 .cancel-button:hover {
-  background-color: #dddddd;
+  background-color: #E72929;
 }
 
-.cancel-btn-regis {
-  z-index: 1000;
-  display
+.cancel-btn-regis-modal {
+  display: flex;
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #FF0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+  border-style: solid;
+  border-color: #FF0000;
+  justify-content: center;
+}
+
+.cancel-btn-regis-modal:hover {
+  background-color: #E72929;
 }
