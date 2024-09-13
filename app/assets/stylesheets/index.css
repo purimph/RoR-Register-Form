@@ -84,12 +84,13 @@ tr{
 }
 
 .edit-btn {
-  background-color: #399918;
   color: white;
+  background-color: #80AF81;
 }
 
 .edit-btn:hover {
-  background-color: #387F39;
+  background-color: #387f39;
+  color: white;
 }
 
 .delete-btn {
@@ -105,18 +106,19 @@ tr{
 .new-registration-btn {
   display: inline-block;
   padding: 10px;
-  background-color: #399918;
   color: white;
+  background-color: #80AF81;
   text-decoration: none;
   border-radius: 4px;
   font-size: 16px;
   margin:0px 0px 0px 20px;
   width: fit-content;
-  border: none;
+  border-color: #80AF81;
+  border-style:solid;
 }
 
 .new-registration-btn:hover {
-  background-color: #387F39;
+  background-color: #387f39;
   color: white;
 }
 .pagination {
